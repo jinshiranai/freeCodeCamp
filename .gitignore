@@ -1,5 +1,9 @@
 # My files
 py4efun
+many_to_many
+geodata/
+pagerank/
+gmane/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
