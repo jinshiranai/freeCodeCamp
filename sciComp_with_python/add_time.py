@@ -86,7 +86,13 @@ def add_time(start_time, added_time, day=''):
 
     print(new_time)
 
-add_time("10:00 PM", "1:05")
-add_time("10:45 AM", "3:30")
-add_time("10:45 PM", "13:30", "tuesday")
-add_time("10:45 PM", "3413:30", "friday")
+
+input_1 = input("Start time (12-hour format): ")
+input_2 = input("Time to add (hours:minutes): ")
+weekday_yn = input("Add day of week? (y/n): ")
+
+if weekday_yn == 'y':
+    weekday = input(" Enter day of week: ")
+    add_time(input_1, input_2, weekday)
+else:
+    add_time(input_1, input_2)
